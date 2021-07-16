@@ -1,0 +1,165 @@
+/*google font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/*common*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+/*header start*/
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #2d25a0;
+  padding-top: 153px;
+  padding-bottom: 86px;
+  margin-bottom: 70px;
+}
+.container {
+  margin: 0 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner-left {
+  width: 40%;
+}
+.banner-left h1 {
+  font-size: 49px;
+  line-height: 80px;
+  color: white;
+  margin-bottom: 27px;
+}
+button {
+  padding: 10px 24px;
+  background: #e02c6d;
+  color: white;
+}
+button:hover {
+  background: orange;
+}
+.icon {
+  padding: 5px;
+}
+.banner-right {
+  width: 50%;
+  padding-left: 5%;
+}
+.banner-right img {
+  width: 95%;
+  transition: transform 2s ease;
+}
+.banner-right:hover img {
+  transform: rotate(-360deg);
+}
+
+/*header end*/
+/*main start*/
+.blog {
+  display: flex;
+  justify-content: center;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  margin: 0 150px;
+}
+.player-info {
+  box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+  text-align: center;
+  padding-top: 10px;
+}
+.player-info img {
+  width: 90%;
+}
+.player-details {
+  text-align: justify;
+  padding: 15px;
+}
+/*main end*/
+/*final start*/
+.final {
+  margin-top: 50px;
+}
+.final img {
+  width: 100%;
+}
+/*final end*/
+/*footer start*/
+.foot {
+  text-align: center;
+  margin-top: 50px;
+}
+.log img {
+  width: 50%;
+}
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons {
+  width: 50px;
+  height: 50px;
+  background: gray;
+  text-align: center;
+  justify-content: center;
+  border-radius: 25px;
+  padding-top: 15px;
+  margin-left: 15px;
+}
+/*footer end*/
+
+/* Mobile start */
+@media screen and (max-width: 688px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 15px;
+  }
+  .banner-left,
+  .banner-right {
+    width: 100%;
+    padding: 0;
+  }
+  .banner-left h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .banner-right img {
+    width: 90%;
+    margin-top: 50px;
+  }
+  .players {
+    grid-template-columns: 1fr;
+    margin: 0 15px;
+  }
+  .player-info {
+    width: 100%;
+  }
+}
+/* Mobile end */
+/* Tablet start*/
+@media screen and (min-width: 689px) and (max-width: 992px) {
+  .container {
+    margin: 0 15px;
+  }
+  .players {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 15px;
+  }
+  .banner-right img {
+    width: 90%;
+  }
+  .banner-left,
+  .banner-right {
+    padding: 0;
+  }
+}
+/* Tablet end*/
